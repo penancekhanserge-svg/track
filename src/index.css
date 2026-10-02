@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+@theme {
+ --color-primary:#9A4F16; --color-primary-dark:#5C2D0C; --color-accent:#C76A21; --color-cream:#F8F3ED; --color-ink:#111827; --color-mist:#F3F4F6;
+ --font-sans:'DM Sans',ui-sans-serif,system-ui,sans-serif; --font-display:'Manrope','DM Sans',ui-sans-serif,sans-serif;
+}
+:root{font-family:'DM Sans',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#111827;background:#fffdfa;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:16px;font-weight:400}
+*{box-sizing:border-box} html{min-width:320px;scroll-behavior:smooth} body{min-width:320px;min-height:100vh;margin:0} button,input{font:inherit} a{color:inherit;text-decoration:none} ::selection{color:#fff;background:#9A4F16}
+
+.hero-scene{background:linear-gradient(135deg,rgba(255,255,255,.88),rgba(255,237,218,.42)),radial-gradient(ellipse at 75% 25%,#f5caa8 0,transparent 37%),linear-gradient(145deg,#f4e5d8 0%,#e5eef0 52%,#d6e8e9 100%)} .hero-sun{position:absolute;left:40%;top:12%;width:34%;height:58%;border-radius:50%;background:radial-gradient(circle,#fff8e8 0,rgba(255,225,181,.64) 34%,transparent 72%);filter:blur(5px)} .hero-route{position:absolute;left:38%;top:22%;width:53%;height:42%;border-top:2px dashed rgba(154,79,22,.56);border-radius:50%;transform:rotate(10deg)} .hero-route:after{content:"";position:absolute;right:2%;top:-9px;width:13px;height:13px;border-radius:50% 50% 50% 0;background:#9a4f16;transform:rotate(-45deg);box-shadow:0 2px 5px #65300f55}

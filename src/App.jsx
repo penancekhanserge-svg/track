@@ -1,0 +1,11 @@
+import { Route, Routes } from 'react-router-dom'
+import MainLayout from './layouts/MainLayout.jsx'
+import Home from './pages/Home/Home.jsx'
+import Services from './pages/Services/Services.jsx'
+import TrackShipment from './pages/TrackShipment/TrackShipment.jsx'
+import About from './pages/About/About.jsx'
+import Contact from './pages/Contact/Contact.jsx'
+import Login from './pages/Login/Login.jsx'
+import Dashboard from './pages/Dashboard/Dashboard.jsx'
+import NotFound from './pages/NotFound.jsx'
+export default function App(){return <Routes><Route element={<MainLayout/>}><Route path="/" element={<Home/>}/><Route path="/services" element={<Services/>}/><Route path="/track" element={<TrackShipment/>}/><Route path="/about" element={<About/>}/><Route path="/contact" element={<Contact/>}/><Route path="/login" element={<Login/>}/><Route path="/dashboard" element={<Dashboard/>}/></Route><Route path="*" element={<NotFound/>}/></Routes>}

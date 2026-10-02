@@ -1,0 +1,4 @@
+import { ArrowRight, PackageSearch } from 'lucide-react'
+import { useState } from 'react'
+import Button from './Button.jsx'
+export default function TrackingInput(){const [trackingId,setTrackingId]=useState('');return <form className="flex w-full flex-col gap-3 rounded-2xl border border-black/5 bg-white p-3 shadow-sm sm:flex-row" onSubmit={e=>{e.preventDefault();window.location.href=`/track?code=${encodeURIComponent(trackingId)}`}}><label className="flex min-w-0 flex-1 items-center gap-3 px-2"><PackageSearch aria-hidden="true" className="shrink-0 text-primary" size={20}/><span className="sr-only">Tracking number</span><input className="min-w-0 flex-1 bg-transparent py-2 text-sm outline-none placeholder:text-gray-400" value={trackingId} onChange={e=>setTrackingId(e.target.value)} placeholder="Enter your tracking number"/></label><Button type="submit" className="gap-2">Track package <ArrowRight size={16}/></Button></form>}
